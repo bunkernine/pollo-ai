@@ -194,20 +194,20 @@ export const GlobalSidebar = ({ children }: GlobalSidebarProperties) => {
 
   return (
     <>
-      <Sidebar variant="inset">
+      <Sidebar variant="sidebar" className="p-0">
         <SidebarHeader>
           <SidebarMenu>
             <SidebarMenuItem>
               <div
                 className={cn(
-                  "h-[36px] overflow-hidden transition-all [&>div]:w-full",
+                  "h-9 overflow-hidden transition-all [&>div]:w-full",
                   sidebar.open ? "" : "-mx-1"
                 )}
               >
-                <OrganizationSwitcher
+                {/* <OrganizationSwitcher
                   afterSelectOrganizationUrl="/"
                   hidePersonal
-                />
+                /> */}
               </div>
             </SidebarMenuItem>
           </SidebarMenu>

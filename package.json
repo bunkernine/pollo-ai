@@ -43,8 +43,21 @@
   },
   "pnpm": {
     "overrides": {
-      "parse5": "^7.2.1"
-    }
+      "parse5": "^7.2.1",
+      "import-in-the-middle": "2.0.0"
+    },
+    "ignoredBuiltDependencies": [
+      "@clerk/shared",
+      "@prisma/client",
+      "@prisma/engines",
+      "@sentry/cli",
+      "bufferutil",
+      "core-js",
+      "core-js-pure",
+      "esbuild",
+      "prisma",
+      "sharp"
+    ]
   },
   "type": "module"
 }
